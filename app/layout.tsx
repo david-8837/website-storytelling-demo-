@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
+const inter = localFont({
+  src: "./fonts/GeistVF.woff",
   variable: "--font-inter",
+  weight: "100 900",
 });
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
+const playfair = localFont({
+  src: "./fonts/GeistVF.woff",
   variable: "--font-playfair",
+  weight: "100 900",
 });
 
 export const metadata: Metadata = {
